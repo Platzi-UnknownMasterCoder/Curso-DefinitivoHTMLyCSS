@@ -1,0 +1,39 @@
+/* Estilos */
+figure {
+	position: relative;
+	margin: 0%;
+}
+
+img {
+	position: relative;
+	border-radius: 15%;
+	height: 80px;
+	width: 80px;
+}
+
+ul {
+	font-weight: normal;
+}
+
+h4 {
+	font-style: italic;
+}
+
+#tittle {
+	color: crimson;
+}
+
+#textos {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#numeration {
+	font-weight: bold;
+	/* color: blue; */
+}
+
+#list {
+	/* color: red; */
+	/* font-weight: bold; */
+	list-style: disc;
+}
