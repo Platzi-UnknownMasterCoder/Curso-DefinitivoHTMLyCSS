@@ -1,0 +1,18 @@
+/* Selector of a CSS Stylesheet */
+
+/* Element */
+p {
+	color: blue;
+	font-size: 40px;
+}
+
+/* Class */
+.parrafo {
+	color: red;
+}
+
+/* Id */
+#texto {
+	color: yellow;
+	font-size: 24px;
+}
