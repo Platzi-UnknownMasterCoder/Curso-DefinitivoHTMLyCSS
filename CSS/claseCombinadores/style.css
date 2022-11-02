@@ -1,0 +1,5 @@
+/* Aplica a los "p" que esten debajo de un "h2" */
+/* Hermano cercano - adjacent sibling */
+h2 + p {
+	color: red;
+}
