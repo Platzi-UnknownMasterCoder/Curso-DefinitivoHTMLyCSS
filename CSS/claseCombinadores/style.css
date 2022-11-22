@@ -1,5 +1,23 @@
-/* Aplica a los "p" que esten debajo de un "h2" */
+/* Descendiente - descendant */
+/* Aplica a los "p" que sean esten contenidos dentro de un "div" */
+.descendant div p {
+	color: orange;
+}
+
+/* Hijo - child */
+/* Aplica a los "p" que sean hijas directas de "div" */
+.child div > p {
+	color: greenyellow;
+}
+
+/* Hermano General - general sibling */
+/* Aplica a los "p" que sean hijos del mismo padre que "h2" */
+.generalSibling h2 ~ p {
+	color: blue;
+}
+
 /* Hermano cercano - adjacent sibling */
-h2 + p {
+/* Aplica a los "p" que esten debajo de un "h2" */
+.adjacentSibling h2 + p {
 	color: red;
 }
