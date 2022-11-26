@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	position: relative;
+	top: 5vh;
+	margin: 0 auto;
+}
+
+.card__tittle {
+	position: relative;
+	top: 3vh;
+	margin: 0 auto;
+	width: 30vw;
+	z-index: 1;
+	border: solid black 4px;
+	border-radius: 5px;
+	background-color: #db2526;
+	color: white;
+	box-shadow: 0px 8px 15px 2px white;
+}
+
+.card__tittle h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: dashed;
+	text-transform: capitalize;
+}
+
+.card__content {
+	position: relative;
+	margin: 0 auto;
+	width: 40vw;
+	height: 80vh;
+
+	box-shadow: 8px 8px 15px 2px black;
+	/* border: solid 3px white; */
+	border-radius: 10px;
+	background-color: grey;
+	color: black;
+}
+
+.card__img {
+	position: relative;
+	z-index: 2;
+
+	/* margin: 0 auto; */
+	/* width: 10vw; */
+}
+
+.card__img img {
+	position: relative;
+	object-fit: cover;
+	width: 40vw;
+	height: 80vh;
+}
+
+.card__desc {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: right;
+	z-index: 3;
+
+	position: relative;
+	bottom: 35%;
+	margin: 0 5% 5% 0;
+
+	list-style: none;
+}
+
+.card__desc li {
+	border: solid 2px black;
+	/* background-color: #cad0e2;
+	color: black; */
+	background-color: rgb(24, 24, 148);
+	color: white;
+
+	margin: 1% 0;
+	display: inline-block;
+	box-shadow: -2px -2px 2px 1px black;
+}
