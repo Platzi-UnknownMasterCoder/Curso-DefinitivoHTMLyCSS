@@ -16,7 +16,7 @@ body {
 .nav-bar {
 	background-color: #ccc;
 	position: relative;
-	height: 5rem;
+	height: 8vh;
 
 	font-size: 2rem;
 	font-weight: bolder;
@@ -26,7 +26,7 @@ body {
 	display: inline-block;
 	position: absolute;
 	left: 0;
-	padding: 1.5rem 2rem;
+	padding: 2vh 2rem;
 }
 
 .nav-bar ul {
@@ -38,32 +38,85 @@ body {
 .nav-bar li {
 	display: inline-block;
 	position: relative;
-	padding: 1.5rem 2rem;
+	padding: 2vh 2rem;
 
 	list-style: none;
 }
 
 .ads {
-	background-color: salmon;
 	display: inline-block;
 	position: relative;
-	width: 20vw;
-	/* left: 0; */
+	width: 20%;
+	left: 0;
+	height: 80vh;
+
+	background-color: salmon;
+	text-align: center;
 }
 
 .ads section {
+	position: relative;
+	height: 21%;
+	margin: 10% 10%;
+	padding: 25% 10%;
+
 	background-color: #c8c;
-	margin: 2rem;
+	border-radius: 5px;
 }
 
 .content {
 	background-color: gray;
 	display: inline-block;
 	position: absolute;
-	width: 80vw;
+	width: 80%;
 	right: 0;
+	height: 80vh;
+}
+
+.content p {
+	padding: 5%;
 }
 
 .foot {
+	position: relative;
+	height: 12vh;
+
 	background-color: yellow;
+
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+.foot section {
+	margin: 1rem 3rem;
+}
+
+.foot .company {
+	position: absolute;
+	left: 0;
+	display: block;
+
+	text-align: left;
+}
+
+.foot .company :first-child {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.foot .contact {
+	position: absolute;
+	right: 0;
+	/* display: block; */
+
+	text-align: right;
+}
+
+.foot .contact a {
+	display: block;
+}
+
+.foot .contact :first-child {
+	font-weight: bold;
+	text-transform: uppercase;
 }
