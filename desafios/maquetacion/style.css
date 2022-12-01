@@ -15,7 +15,7 @@ body {
 
 .nav-bar {
 	background: #37488b;
-	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
 	color: white;
 
 	position: sticky;
@@ -61,44 +61,51 @@ body {
 }
 
 .ads {
+	background-color: #db2526;
+	box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+
 	display: inline-block;
 	position: relative;
 	width: 20%;
 	left: 0;
 	height: 80vh;
-
-	background-color: salmon;
 	text-align: center;
 }
 
 .ads section {
+	background-color: greenyellow;
+	box-shadow: 8px 8px 5px 1px black;
+	border-radius: 5px;
+
 	position: relative;
 	height: 21%;
 	margin: 10% 10%;
 	padding: 25% 10%;
-
-	background-color: #c8c;
-	border-radius: 5px;
 }
 
 .content {
-	background-color: gray;
+	background-color: #f0f0f0;
 	display: inline-block;
 	position: absolute;
 	width: 80%;
 	right: 0;
-	height: 80vh;
+	height: auto;
 }
 
 .content p {
 	padding: 5%;
+	/* background-color: purple; */
+	z-index: 89;
 }
 
 .foot {
-	position: relative;
-	height: 12vh;
-
 	background-color: yellow;
+	box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+
+	position: relative;
+	bottom: 0;
+	height: 12vh;
+	z-index: 90;
 
 	font-size: 1.2rem;
 	font-style: italic;
@@ -138,17 +145,34 @@ body {
 	text-transform: uppercase;
 }
 
-.card__tittle {
+.card {
+	/* background-color: chartreuse; */
 	position: relative;
-	top: 3vh;
-	margin: 0 auto;
-	width: 30vw;
-	z-index: 1;
-	border: solid black 4px;
-	border-radius: 5px;
+	z-index: 10;
+	margin: 0;
+	/* top: -1.5vh; */
+	/* display: contents; */
+	/* width: auto; */
+	/* height: auto; */
+	/* top: -30rem; */
+	font-size: 1rem;
+}
+
+.card__tittle {
 	background-color: #db2526;
 	color: white;
+	border: solid black 4px;
 	box-shadow: 0px 8px 15px 2px white;
+
+	position: relative;
+	/* top: 1.5rem; */
+	/* margin: 1.5rem auto 0; */
+	margin: -2% auto;
+	width: 30%;
+	border-radius: 5px;
+	z-index: 1;
+
+	/* font-size: 1rem; */
 }
 
 .card__tittle h2 {
@@ -163,8 +187,12 @@ body {
 .card__content {
 	position: relative;
 	margin: 0 auto;
-	width: 40vw;
-	height: 80vh;
+	/* width: 40vw; */
+	/* height: 80vh; */
+	/* width: 40%; */
+	/* height: 40%; */
+	/* height: 90%; */
+	width: 40%;
 
 	box-shadow: 8px 8px 15px 2px black;
 	/* border: solid 3px white; */
@@ -179,13 +207,20 @@ body {
 
 	/* margin: 0 auto; */
 	/* width: 10vw; */
+
+	width: auto;
+	height: auto;
+	display: block;
 }
 
 .card__img img {
 	position: relative;
 	object-fit: cover;
-	width: 40vw;
-	height: 80vh;
+	/* width: 40vw; */
+	/* height: 80vh; */
+	width: 100%;
+	/* display: contents; */
+	/* height: 30rem; */
 }
 
 .card__desc {
@@ -193,8 +228,9 @@ body {
 	text-align: right;
 	z-index: 3;
 
-	position: relative;
-	bottom: 35%;
+	position: absolute;
+	bottom: 0.5%;
+	right: 0.5%;
 	margin: 0 5% 5% 0;
 
 	list-style: none;
