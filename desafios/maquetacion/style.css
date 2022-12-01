@@ -101,26 +101,25 @@ body {
 	list-style: none;
 }
 
-.nav-bar__item a {
+.nav-bar__item .li-link {
 	color: white;
 	/* margin: 2rem; */
 	padding: 1.5rem 2rem;
 	text-decoration: none;
 }
 
-.nav-bar__item a:link,
-a:visited {
+.nav-bar__item .li-link:link,
+.li-link:visited {
 	color: white;
 }
 
-.nav-bar__item a:hover,
-a:active {
+.nav-bar__item .li-link:hover,
+.li-link:active {
 	color: yellow;
 	background-color: #db2526;
 	box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
 
 	text-decoration: underline;
-	text-shadow: 10rem black;
 }
 
 .ads {
@@ -213,6 +212,13 @@ a:active {
 
 .foot .contact a {
 	display: block;
+	color: blue;
+	text-decoration: underline;
+}
+
+.foot .contact a:hover,
+a:active {
+	font-weight: bold;
 }
 
 .foot .contact :first-child {
